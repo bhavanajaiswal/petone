@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------------------------------Adding the bootstrap-------------------------------------------------------------------------------------------->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+<!-------------------------------------------------- Body of the website start------------------------------------------------------------->
+<body> 
+<!------------------------------------------main heading--------------------------------------------------------------------------------------------->
+ 
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!----------------------------------------------------------------------Menu's.----------------------------------------------------------->
+ 
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+<!--..---------------------------------------------------------------Adding the dropdown menu in that------------------------------------------------->
+ 
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+<!------------------------------------------------------------End of the dropdown---------------------------------->
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+
+<!........................................... image of the pets.....................................................>
+<div style="position: relative; text-align: center; padding: 20px; border-bottom: 5px;">
+    <!-- Increased the width of the image and added border-radius -->
+    <img src="images/catanddog_imagefor_vetpage.jpg" alt="Description of the image" style="width: 1100px; height: 400px; border-radius: 20px;">
+
+    <!-- Added text overlay inside the image at the top center -->
+    <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); color: #fff;">
+
+        <!-- Bold Nutritionist -->
+        <p style="font-weight: bold; font-size: 3em; margin-bottom: 10px; color: #159b9b;">Nutritionist</p>
+
+        <!-- Other text inside the image -->
+        
+    </div>
+</div>
+
+
+
+<!...................... some of the text .....................................>
+<div style="text-align: center; padding: 40px; border: 2px solid #f6fdf6; border-radius: 15px; width: 1100px; max-width: 100%; margin: 0 auto; background-color: #E0F7FA; font-family: 'Arial', sans-serif; color: #0277BD;">
+    <p style="font-size: 20px; line-height: 1.5;">A healthy pet is a happy pet, and we love to see them happy hence a balanced diet for your fur babies becomes a pertinent part of pet parenting. Like humans, a combination of protein, carbohydrates, fats, vitamins, minerals and water is essential for the growth and health of your pets.</p>
+</div>
+
+
+
+
+
+<!........................................ how its work....................................................>
+<div style="display: flex; max-width: 1200px; margin: 20px auto;">
+
+    <!-- Left Side with Three Images -->
+    <div style="flex: 1; padding: 20px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+        <!-- Image 1 -->
+        <img src="images/birds_imagefor_dietpage.jpg" alt="Image 1" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+
+        <!-- Image 2 -->
+        <img src="images/lizards_imagefor_dietpage.jpeg" alt="Image 2" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+
+        <!-- Image 3 -->
+        <img src="images/rabbit_imagefor_dietpage.jpg" alt="Image 3" style="width: 100%; height: auto; border-radius: 10px;">
+
+    </div>
+  
+    <!-- Right Side with Text -->
+    <div style="flex: 1; padding: 20px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+        <!-- Heading with Emojis -->
+        <h2 style="font-weight: bold; color: #159b9b; font-size: 1.8em; margin-bottom: 10px;">
+            🐾 How It WORKS 🐾
+        </h2>
+
+        <!-- Steps with Emojis -->
+        <p>
+            📅 Step 1: Schedule a Video Call Appointment <br>
+            Initiate a virtual consultation by scheduling a video call appointment with our skilled nutrition experts. We offer convenient time slots to accommodate your busy schedule.
+        </p>
+        <p>
+            📊 Step 2: Comprehensive Analysis <br>
+            During the video call, our nutritionists will conduct a thorough analysis of your pet's age, breed, and specific health requirements. We believe in tailoring diets to address individual needs, ensuring a holistic approach to pet nutrition.
+        </p>
+        <p>
+            📋 Step 3: Personalized Diet Plan <br>
+            Based on the information gathered, our experts will formulate a detailed and customized diet plan for your pet. This plan considers essential nutrients like proteins, carbohydrates, fats, vitamins, and minerals, providing a balanced and wholesome approach to your pet's well-being.
+        </p>
+        <p>
+            🍽️ Step 4: Nutrient Combination <br>
+            Recognizing that each pet is unique, our nutritionists will recommend a specific combination of nutrients suitable for your pet's growth, energy levels, and overall health. We aim to enhance their lifestyle and promote a happier, healthier life.
+        </p>
+
+        <!-- Additional Content -->
+        <p>
+            🐾 At PetCare Experts, we prioritize the individual needs of your pets, understanding that their well-being is a key aspect of your family's happiness. Schedule a consultation today to embark on a journey towards optimal pet nutrition!
+        </p>
+
+        <!-- More Content -->
+        <h3 style="color: #159b9b; font-size: 1.5em; margin-top: 20px;">Benefits of a Tailored Diet:</h3>
+        <ul>
+            <li>🌟 Improved Digestion</li>
+            <li>💪 Enhanced Immune System</li>
+            <li>😊 Increased Energy Levels</li>
+            <li>🐕 Healthy Skin and Coat</li>
+            <li>👅 Better Oral Health</li>
+        </ul>
+        <p>
+            Discover the difference a personalized diet can make in your pet's life. Our nutritionists are here to guide you every step of the way!
+        </p>
+
+        <!-- Additional Content -->
+        <h3 style="color: #159b9b; font-size: 1.5em; margin-top: 20px;">Why Choose PetCare Experts?</h3>
+        <ul>
+            <li>🏆 Experienced Nutritionists</li>
+            <li>🤝 Personalized Consultations</li>
+            <li>🌐 Virtual Appointments</li>
+            <li>🐶 Tailored Plans for Every Pet</li>
+            <li>⏰ Convenient Scheduling</li>
+        </ul>
+        <p>
+            Entrust your pet's nutrition to the experts at PetCare. We are committed to ensuring the well-being of your furry friends!
+        </p>
+
+        <!-- More Content -->
+        <h3 style="color: #159b9b; font-size: 1.5em; margin-top: 20px;">Frequently Asked Questions:</h3>
+        <p>
+            🤔 Q: How often should I consult with a nutritionist for my pet?<br>
+            A: We recommend regular check-ins, especially during key stages of your pet's life or if there are any health concerns.
+        </p>
+        <p>
+            🛒 Q: Where can I purchase the recommended pet food?<br>
+            A: Our nutritionists can provide guidance on suitable brands, and you can find them at pet stores or online retailers.
+        </p>
+        <p>
+            📞 Q: Can I contact the nutritionists for follow-up questions?<br>
+            A: Absolutely! Our team is available for follow-up queries to ensure your pet's continued well-being.
+        </p>
+    </div>
+</div>
+
+
+
+
+<!.............................................. vedio consulting.................................>
+
+
+<div style="display: flex; max-width: 1400px; margin: 20px auto;">
+
+    <!-- Box 1 -->
+    <div style="flex: 1; padding: 20px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; margin: 0 10px;">
+        <!-- Image 1 -->
+        <img src="images/parrot_imagefor_dietpage.jpg" alt="Video Consultation" style="width: 350px; height: 350px; margin-bottom: 10px;">
+        <!-- Description 1 -->
+        <p style="font-weight: bold; color: #159b9b; font-size: 20px;">Video Consultation</p>
+       
+    </div>
+
+    <!-- Box 2 -->
+    <div style="flex: 1; padding: 20px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; margin: 0 10px;">
+        <!-- Image 2 -->
+        <img src="images/diet_planefor_dietpage.jpeg" alt="Detailed Diet Plan" style="width: 350px; height: 350px; margin-bottom: 10px;">
+        <!-- Description 2 -->
+        <p style="font-weight: bold; color: #159b9b; font-size: 20px;">Detailed Diet Plan</p>
+        
+    </div>
+
+    <!-- Box 3 -->
+    <div style="flex: 1; padding: 20px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; margin: 0 10px;">
+        <!-- Image 3 -->
+        <img src="images/post_consultation_dietpage.webp" alt="Post Consultation" style="width: 350px; height: 350px; margin-bottom: 10px;">
+        <!-- Description 3 -->
+        <p style="font-weight: bold; color: #159b9b; font-size: 20px;">Post Consultation</p>
+       
+    </div>
+
+</div>
+
+
+
+<div style="text-align: center; padding: 40px; border: 2px solid #ccc; border-radius: 15px; width: 600px; max-width: 100%; margin: 0 auto; background-color: #f8f8f4; font-family: 'Arial', sans-serif; color: #5cc9f4;">
+    <p style="font-size: 24px; line-height: 1.5; font-weight: bold;">Consult with expert nutritionist<br>for ₹ 999/- only</p>
+    <p style="font-size: 30px; margin-top: 20px;">⚕️</p>
+    <a href="consultation-page.html" style="display: inline-block; padding: 15px 30px; background-color: #159b9b; color: #fff; text-decoration: none; border-radius: 8px; font-size: 18px; margin-top: 20px;">Consult Now</a>
+</div>
+
+
+
+<div style="display: flex; justify-content: space-around; padding: 20px;">
+
+    <div style="width: 300px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/pet_nutritionist_image_dietpage.webp" alt="Obedience Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dr. Anukarna Singh</h3>
+        <p>Dr. Anukarna Singh, a skilled veterinarian, specializes in animal nutrition. With degrees from CSKHPKV, Palampur, and expertise from the Central University of NDRI, Karnal, she focuses on personalized nutrition plans for pets, enhancing their overall health and well-being. 
+            </p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #e6f7ff; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/pet_nutritionist_image_dietpage.webp"  alt="Leash Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dr. Anukarna Singh</h3>
+        <p>Transform your pet's walking habits and enjoy peaceful strolls together! Learn leash training techniques to ensure a pleasant and safe experience for both you and your furry friend.</p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #fff3e6; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/pet_nutritionist_image_dietpage.webp"  alt="Puppy Board Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dr. Anukarna Singh</h3>
+        <p>Give your puppy the best start in life by shaping them into a well-behaved and confident companion. Our puppy board training program focuses on socialization, basic commands, and positive behavior development.</p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #d9ead3; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/Customized Training_imagefor_behaviourpage.webp" alt="Customized Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dr. Anukarna Singh</h3>
+        <p>Address your dog's specific training needs head-on with our customized training plan! Our experienced trainers tailor a program to address individual challenges and goals, ensuring a personalized and effective training experience.</p>
+      </div>
+    </div>
+  
+  </div>
+  
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+  <div style="font-family: 'Arial', sans-serif; text-align: center; margin: 0; padding: 20px;">
+
+    <p style="font-size: 18px; color: #333; margin: 0;">Book assessment session for ₹ 499/- only.</p>
+    <a href="your_new_page.html" style="text-decoration: none;">
+      <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;">
+        Book Now
+      </button>
+    </a>
+  
+  </div>
+  
+
+<br><br>
+
+
+
+ 
+
+  
+
+
+
+<!..........................................PetConsultant STORIES......................................>
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+    <!-- Left 50% with Text -->
+    <div style="flex: 1; max-width: 48%;">
+        <!-- Card Container -->
+        <div style="width: 70%; margin: 0 auto; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
+
+            <!-- Heading with specified text color -->
+            <h2 style="font-size: 40px; margin: 20px 0; color: #159b9b;">PetConsultant STORIES</h2>
+
+            <!-- Paragraph -->
+            <p style="font-size: 18px; margin: 0 20px 20px;">Become a part of PetConsulting YouTube community to stay up-to-date with what's new at Kuddle. Join us to learn about pet-parenting tips, our new launches and events happening in Bangalore for pet parents. Subscribe us on YouTube NOW to join Kuddle's Paw Family!</p>
+
+        </div>
+    </div>
+
+    <!-- Right 50% with YouTube Frame -->
+    <div style="flex: 1; max-width: 48%;">
+        <div style="border: 2px solid #f7fafa; border-radius: 10px; overflow: hidden;">
+            <!-- Decreased size of iframe and added text color -->
+            <iframe width="95%" height="280" src="https://www.youtube.com/embed/dY8ajyiZgIY" frameborder="0" allowfullscreen style="border: none;"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!..................................................................> 
+<div style="text-align: center; padding: 40px; background-color: #f0f0f0; border-radius: 10px;">
+
+    <h2 style="font-size: 40px; margin-bottom: 20px; color: #159b9b;">HappyPARENTS</h2>
+
+    <p style="font-size: 18px;"><h2>60,000+</h2></p>
+    
+    <p style="font-size: 18px; margin-top: -10px;"><h2>Read what pawrents feel about us</h2> </p>
+
+</div>
+
+
+
+
+
+
+
+
+ 
+<!............................................... some of the images related to the services................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px;">
+    <!-- Services Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Services</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Pet Grooming</li>
+        <li style="margin-bottom: 10px;">Dog Walking</li>
+        <li style="margin-bottom: 10px;">Dog Behaviourist</li>
+        <li style="margin-bottom: 10px;">Vet Home Visit</li>
+        <li style="margin-bottom: 10px;">Vet Video Call</li>
+        <li style="margin-bottom: 10px;">Pet Nutritionist</li>
+        <li style="margin-bottom: 10px;">Cat Grooming</li>
+        <li style="margin-bottom: 10px;">Experience Center</li>
+        <li style="margin-bottom: 10px;">Dog Food Planner</li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Social</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Blogs</li>
+        <li style="margin-bottom: 10px;">Adoptions</li>
+        <li style="margin-bottom: 10px;">Ask Questions</li>
+        <li style="margin-bottom: 10px;">Stories</li>
+        <li style="margin-bottom: 10px;">Polls</li>
+      </ul>
+    </div>
+
+    <!-- Blogs Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Blogs</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Why Do Dogs Steal and Protect Things and How to Prevent It</li>
+        <li style="margin-bottom: 10px;">Decoding Your Doggie's Poop Color</li>
+        <li style="margin-bottom: 10px;">Absolutely Avoid These Nutrients in Your Pet Food!</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Contact Us</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">Phone: 08049670496</li>
+        <li style="margin-bottom: 10px;">Email: social@kuddle.pet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!........................................................... last section of the  website.................................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: 20px auto; padding: 20px; display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">About Us</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Privacy Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Terms & Conditions</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Refund Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Return Policy</a>
+  </div>
+</div>
+
+<style>
+  a:hover {
+    background-color: #babfc8;
+    color: #12658f;
+  }
+</style>
+<br><br>
+<!-----------------------------------------------------------Last section of the webpage--------------------------------------------------------------------->
+
+<footer style="text-align: center; background-color: #f5f5f5; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+  <p>&copy; 2023 Pet Consulting. All rights reserved.</p>
+</footer>
+
+
+
+
+  
+
+</body>
+</html>

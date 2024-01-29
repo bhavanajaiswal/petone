@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------------------------------Adding the bootstrap-------------------------------------------------------------------------------------------->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+<!-------------------------------------------------- Body of the website start------------------------------------------------------------->
+<body> 
+<!------------------------------------------main heading--------------------------------------------------------------------------------------------->
+ 
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!----------------------------------------------------------------------Menu's.----------------------------------------------------------->
+ 
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+<!--..---------------------------------------------------------------Adding the dropdown menu in that------------------------------------------------->
+ 
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+<!------------------------------------------------------------End of the dropdown---------------------------------->
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+<!.......................................................................>
+
+
+<!.................................................image of Labrador Retriever......................................>
+<div style="display: flex; justify-content: space-around; max-width:1400px; margin: 20px auto; font-family: 'Roboto', sans-serif; text-align: justify;">
+
+    <div style="width: 65%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; background-color: #fffbd3; border-radius: 15px;">
+      <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 30px;">Golden Retrievers Are</h2>
+      <p style="margin-bottom: 10px; font-size: 28px; font-weight: bold; text-align: center;">The Real Deal: Non-Stop<br>Fun!</p>
+      <p style="font-size: 20px; text-align: center;">Retrievers Are Originally From<br>Scotland, Where They Were Bred<br>For Hunting.</p>
+    </div>
+  
+    <div style="width: 38%; overflow: hidden; border-radius: 15px;">
+      <img src="images/golden_retriever_imagefor_consultantbreedpage.jpeg" alt="Golden Retriever" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+    </div>
+  
+  </div>
+  
+
+
+
+
+
+<!................................................. subpages................................................>
+<div style="display: flex; justify-content: space-around; max-width:1400px; margin: 20px auto; font-family: 'Roboto', sans-serif; text-align: justify;">
+
+    <!-- Left Card -->
+    <div style="width: 48%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; background-color: #fffbd3; border-radius: 15px;">
+  
+      <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 24px;">Breed Information</h2>
+  
+      <div style="text-align: left;">
+        <p><strong>Coat:</strong> Curly & wavy</p>
+        <p><strong>Shedding:</strong> High</p>
+        <p><strong>Size:</strong> Medium</p>
+        <p><strong>Life Expectancy:</strong> 10-12 years</p>
+      </div>
+  
+    </div>
+  
+    <!-- Right Card -->
+    <div style="width: 48%; background-color: #fffbd3; overflow: hidden; border-radius: 15px; padding: 20px;">
+  
+      <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 24px; text-align: center;">Coat Colors</h2>
+  
+      <div style="display: flex; justify-content: space-between; border-radius: 8px; overflow: hidden; margin-bottom: 20px;">
+  
+        <!-- Coat Colors Buttons -->
+        <div style="flex: 1; background-color: #ffd699; padding: 8px; text-align: center; border-radius: 8px; margin-right: 5px;">
+          Golden
+        </div>
+  
+        <div style="flex: 1; background-color: #ffd699; padding: 8px; text-align: center; border-radius: 8px; margin-right: 5px;">
+          Light Golden
+        </div>
+  
+        <div style="flex: 1; background-color: #ffd699; padding: 8px; text-align: center; border-radius: 8px;">
+          Dark Golden
+        </div>
+  
+      </div>
+  
+      <div style="display: flex; justify-content: space-between;">
+  
+        <!-- Left side: Weight -->
+        <div style="flex: 1;">
+          <h3 style="font-weight: bold; font-size: 18px;">Weight</h3>
+          <p>30-34kgs (male)</p>
+          <p>24-29kgs (female)</p>
+        </div>
+  
+        <!-- Vertical Line -->
+        <div style="border-left: 2px solid #ccc; height: 100px; margin: 0 20px;"></div>
+  
+        <!-- Right side: Height -->
+        <div style="flex: 1;">
+          <h3 style="font-weight: bold; font-size: 18px;">Height</h3>
+          <p>58-60cm (male)</p>
+          <p>55-57cm (female)</p>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
+ <!............................ next section ...............................>
+ <div style="display: flex; justify-content: space-around; max-width:1400px; margin: 20px auto; font-family: 'Roboto', sans-serif; text-align: justify;">
+
+    <!-- Left Card -->
+    <div style="width: 48%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; background-color: #fffbd3; border-radius: 15px;">
+  
+      <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 24px;">Adaptability</h2>
+  
+      <div style="text-align: left;">
+        <p>Temperatures should be moderate for Golden Retrievers.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Right Card -->
+    <div style="width: 48%; background-color: #fffbd3; overflow: hidden; border-radius: 15px; padding: 20px;">
+  
+      <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 24px; text-align: center;">Weather Tolerance</h2>
+  
+      <div style="display: flex; justify-content: space-between;">
+  
+        <!-- Left side: Hot Weather Tolerance -->
+        <div style="flex: 1; text-align: left;">
+          <h3 style="font-weight: bold; font-size: 18px;">Hot Weather Tolerance</h3>
+          <p><strong>Up to 30℃</strong> ☀️</p>
+        </div>
+  
+        <!-- Right side: Cold Weather Tolerance -->
+        <div style="flex: 1; text-align: left;">
+          <h3 style="font-weight: bold; font-size: 18px;">Cold Weather Tolerance</h3>
+          <p><strong>Up to -6.7℃</strong> ❄️</p>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
+
+
+<!............................... levels of the dogs and his characteristics ..................>
+<div style="max-width: 1400px; margin: 20px auto; font-family: 'Roboto', sans-serif; text-align: center;">
+
+    <h2 style="font-weight: bold; margin-bottom: 10px; font-size: 24px;">Traits</h2>
+  
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <p style="font-weight: bold; font-size: 24px; white-space: nowrap; overflow: visible;">
+          Traits have been rated by dog trainers, expert vets, and pet behaviorists.
+        </p>
+        <p style="white-space: nowrap; overflow: visible;">
+          Remember that all dogs are individuals with their own personalities.
+        </p>
+      </div>
+      
+      
+  
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+  
+      <!-- Friendliness -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Friendliness</h3>
+        <p style="font-size: 24px;">★★★★★</p>
+        <p>😊</p>
+      </div>
+  
+      <!-- Good With Other Dogs -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Good With Other Dogs</h3>
+        <p style="font-size: 24px;">★★★★★</p>
+        <p>🐾</p>
+      </div>
+  
+      <!-- Good With Kids -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Good With Kids</h3>
+        <p style="font-size: 24px;">★★★★★</p>
+        <p>👶</p>
+      </div>
+  
+      <!-- Barking Tendencies -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Barking Tendencies</h3>
+        <p style="font-size: 24px;">★★★☆☆</p>
+        <p>🗣️</p>
+      </div>
+  
+      <!-- Energy Level -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Energy Level</h3>
+        <p style="font-size: 24px;">★★★★☆</p>
+        <p>⚡</p>
+      </div>
+  
+      <!-- Playfulness -->
+      <div style="flex: 1; background-color: #fffbd3; padding: 20px; border-radius: 15px; margin: 0 10px; margin-bottom: 20px;">
+        <h3 style="font-weight: bold; font-size: 18px;">Playfulness</h3>
+        <p style="font-size: 24px;">★★★★☆</p>
+        <p>🎾</p>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br> 
+  <!.........................next div..................................>
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <h1 style="text-align: center; font-size: 44px; font-weight: bold; color: #ffd700; border: 2px solid #ffd700; padding: 10px;">
+        Golden Retriever Diet
+    </h1>
+
+    <p style="text-align: center; font-size: 16px; color: #333; margin-top: 10px;">
+        Consider the following tips when choosing food for your golden retriever.
+    </p>
+
+    <div style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
+
+        <!-- Card 1 -->
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 20px; padding: 20px; border: 2px solid #ffd700; max-width: 800px;">
+
+            <h3>1. Choose a protein-rich diet</h3>
+            <p style="text-align: justify;">
+                Since Golden Retrievers are medium to large in size, they require a diet that is high in protein to support their muscle mass and energy needs. Look for dry food that is made with high-quality, easily digestible protein sources like real meat or fish.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <div style="width: 48%;">
+                    <img src="images/Chicken based food_image_shepherd - Copy.webp" alt="Chicken Based Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Chicken based food</p>
+                    <a href="image1-link.html">Link to Image 1</a>
+                </div>
+                <div style="width: 48%;">
+                    <img src="images/Fish_based_food_for_shepherdpage - Copy.webp" alt="Fish Based Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Fish based food</p>
+                    <a href="image2-link.html">Link to Image 2</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 20px; padding: 20px; border: 2px solid #ffd700; max-width: 800px;">
+
+            <h3>2. Avoid fillers & additives</h3>
+            <p style="text-align: justify;">
+                Most commercial dog food contains fillers like corn, wheat, and soy, which can be difficult for them to digest and may cause allergies. Choose dog food that is made with whole, natural ingredients and free from unnecessary additives.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <div style="width: 48%;">
+                    <img src="images/bakedfood1_for_golden retrieverpage.jpg" alt="Baked dry food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Baked dry food</p>
+                    <a href="image2-link.html">Link to Image 2</a>
+                </div>
+                <div style="width: 48%;">
+                    <img src="images/Soy - free_shepheredpage - Copy.webp" alt="Soy-Free Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Soy-Free Food</p>
+                    <a href="image3-link.html">Link to Image 3</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 20px; padding: 20px; border: 2px solid #ffd700; max-width: 800px;">
+
+            <h3>3. Consider their age</h3>
+            <p style="text-align: justify;">
+                The nutritional needs of puppies are different from those of adult dogs. A puppy's diet should be higher in protein and calories to support their rapid growth and development. Diet for an adult dog should be formulated to meet their maintenance needs.
+            </p>
+
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <div style="width: 48%;">
+                    <img src="images/Puppy_for_shepheredpage - Copy.jpg" alt="Puppy Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Puppy Food</p>
+                    <a href="image5-link.html">Link to Image 5</a>
+                </div>
+                <div style="width: 48%;">
+                    <img src="images/Adultdogfood_for_shepherdpage - Copy.webp" alt="Adult Dog Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Adult dog food</p>
+                    <a href="image6-link.html">Link to Image 6</a>
+                </div>
+                <div style="width: 48%;">
+                    <img src="images/senior doogfood_for_goldentretriever page.webp" alt="Senior Dog Food" style="width: 100%; height: 200px; object-fit: cover; border: 2px solid #ffd700; margin-bottom: 10px;">
+                    <p style="text-align: center;">Senior dog food</p>
+                    <a href="image7-link.html">Link to Senior Dog Food</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br> 
+<!--------------------------------Golden Retriever Training-->
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+  <h1 style="text-align: center; font-size: 44px; font-weight: bold; color: #ffd700; border: 2px solid #ffd700; padding: 10px;">
+      Golden Retriever Training
+  </h1>
+  <p style="text-align: center; font-size: 16px; color: #333; margin-top: 10px;">
+      Golden Retrievers are intelligent and active dogs that require plenty of mental and physical stimulation to stay healthy and happy. Here are some ways you can ensure they stay stimulated.
+  </p>
+
+  <!-- Card 1 -->
+  <div style="width: 60%; text-align: center; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+      <h3>1. Lots of physical exercise 🏃‍♂️</h3>
+      <p>
+          Retrievers are known for their high energy levels, so it's crucial to provide them with enough opportunities for physical exercises such as walks, runs, hikes, and playtime with toys.
+      </p>
+      <!-- Images -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+          <!-- Image 1 -->
+          <div style="width: 30%;">
+              <img src="images/Collar and Leashes_for_golden-retriverpage - Copy.webp" alt="Collar and Leashes" style="width: 100%; height: auto;">
+              <p>Collar and Leashes</p>
+          </div>
+          <!-- Image 2 -->
+          <div style="width: 30%;">
+              <img src="images/Rope Toys_for_goldenretrieverpage - Copy.webp" alt="Rope Toys" style="width: 100%; height: auto;">
+              <p>Rope Toys</p>
+          </div>
+          <!-- Image 3 -->
+          <div style="width: 30%;">
+              <img src="images/Fetch Toys_for_goldenretrieverpage - Copy.webp" alt="Fetch Toys" style="width: 100%; height: auto;">
+              <p>Fetch Toys</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 60%; text-align: center; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+      <h3>2. Engage in interactive play 🐕</h3>
+      <p>
+          Retrievers require regular mental and physical stimulation. Activities such as obedience and agility training, interactive toys, puzzle toys can keep them mentally stimulated. Chew toys, plush toys, and scent-based toys can also be used to keep them engaged and happy.
+      </p>
+      <!-- Images -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+          <!-- Image 4 -->
+          <div style="width: 30%;">
+              <img src="images/Interactive Toys_for_goldenretrieverpage - Copy.jpg" alt="Interactive Toys" style="width: 100%; height: auto;">
+              <p>Interactive Toys</p>
+          </div>
+          <!-- Image 5 -->
+          <div style="width: 30%;">
+              <img src="images/Puzzle Toys_for_goldenretrieverpage - Copy.jpeg" alt="Puzzle Toys" style="width: 100%; height: auto;">
+              <p>Puzzle Toys</p>
+          </div>
+          <!-- Image 6 -->
+          <div style="width: 30%;">
+              <img src="images/Chew Toys_for_goldenretrieverpage - Copy.jpg" alt="Chew Toys" style="width: 100%; height: auto;">
+              <p>Chew Toys</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br> 
+<br><br><br><br><br><br><br><br> 
+<br><br><br><br><br><br><br><br> 
+ 
+<!..................................   Golden Retriever Grooming..........................................>
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+  <!-- Main Heading -->
+  <h1 style="text-align: center; font-size: 44px; font-weight: bold; color: #e0bd0c; border: 2px solid #ffd700; padding: 10px;">
+      Golden Retriever Grooming
+  </h1>
+
+  <!-- Card 1 -->
+  <div style="width: 60%; display: flex; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+
+      <!-- Left Section: Heading and Content -->
+      <div style="width: 60%; text-align: left; padding-right: 20px;">
+          <h3>1. Brush and bath</h3>
+          <p style="text-align: justify;">
+              Regularly brush and bathe golden retrievers as they have a thick water-repellent coat. Use mild shampoo to maintain the coat, remove loose hair, distribute oils, and reduce shedding.
+          </p>
+      </div>
+
+      <!-- Right Section: Images -->
+      <div style="width: 40%;">
+          <img src="images/Brush and bath_for_goldenreteriverpage.jpg" alt="Brush and Comb" style="width: 100%; height: auto;">
+          <p style="text-align: center;">Brush and Comb</p>
+          <a href="brush_comb_link.html">Link to Image</a>
+      </div>
+
+  </div>
+
+  <!-- Card 2 -->
+  <div style="width: 60%; display: flex; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+
+      <!-- Left Section: Heading and Content -->
+      <div style="width: 60%; text-align: left; padding-right: 20px;">
+          <h3>2. Keep their ears clean</h3>
+          <p style="text-align: justify;">
+              Use a veterinarian-approved ear cleaning solution to gently clean the inside of your golden retriever's ears, being careful not to insert the cleaner too deeply.
+          </p>
+      </div>
+
+      <!-- Right Section: Images -->
+      <div style="width: 40%;">
+          <img src="images/Keep their ears clean_imgfor_goldenretrieverpage.jpg" alt="Eye Cleaning Products" style="width: 100%; height: auto;">
+          <p style="text-align: center;">Ear Cleaning Products</p>
+          <a href="eye_cleaning_link.html">Link to Image</a>
+      </div>
+
+  </div>
+
+  <!-- Card 3 -->
+  <div style="width: 60%; display: flex; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+
+      <!-- Left Section: Heading and Content -->
+      <div style="width: 60%; text-align: left; padding-right: 20px;">
+          <h3>3. Nail and paw care</h3>
+          <p style="text-align: justify;">
+              Retrievers' nails grow quickly and can become too long if not trimmed regularly. This can cause discomfort and injury. It's important to trim their nails regularly to keep them at a healthy length.
+          </p>
+      </div>
+
+      <!-- Right Section: Images -->
+      <div style="width: 40%;">
+          <img src="images/Nail and paw care_imgfor_goldenretriverpage.jpg" alt="Paw Cleaning Products" style="width: 100%; height: auto;">
+          <p style="text-align: center;">Paw Cleaning Products</p>
+          <a href="paw_cleaning_link.html">Link to Image</a>
+      </div>
+
+  </div>
+
+  <!-- Card 4 -->
+  <div style="width: 60%; display: flex; margin: 20px; border: 2px solid #ffd700; padding: 20px; max-width: 800px;">
+
+      <!-- Left Section: Heading and Content -->
+      <div style="width: 60%; text-align: left; padding-right: 20px;">
+          <h3>4. Dental care</h3>
+          <p style="text-align: justify;">
+              Golden Retrievers are prone to dental problems, so it's important to brush their teeth regularly to remove plaque and prevent tartar buildup.
+          </p>
+      </div>
+
+      <!-- Right Section: Images -->
+      <div style="width: 40%;">
+          <img src="images/Dental care_imgfor_goldenretriever.jpg" alt="Dental Care Products" style="width: 100%; height: auto;">
+          <p style="text-align: center;">Dental Care Products</p>
+          <a href="dental_care_link.html">Link to Image</a>
+      </div>
+
+  </div>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br> 
+<br><br><br><br><br><br><br><br> 
+<br><br><br><br> 
+ 
+<!.........................................................................................>
+<div style="text-align: center; margin-top: 30px; max-width: 800px; margin: 0 auto;">
+
+    <!-- Part 1: Golden Retriever Common Health Concerns -->
+    <div style="margin-bottom: 20px;">
+      <h2 style="font-weight: bold; font-size: 28px;">Golden Retriever Common Health Concerns</h2>
+      <p style="font-size: 16px; color: #555; margin-top: 10px;">
+        Generally, Golden Retrievers are healthy dogs, but like all breeds, they too are prone to certain health issues. Scroll to know what they are.
+      </p>
+    </div>
+  
+    <!-- Circle with Dog Image in the Middle -->
+    <div style="position: relative; margin-bottom: 20px;">
+      <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; background-color: #ffd699; display: inline-block; position: relative;">
+        <img src="images/Golden Retriever_imagefor_breedpage - Copy.jpg" alt="Golden Retriever" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+  
+    <!-- Part 2: Hip and Elbow Dysplasia -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+  
+      <!-- Left Side: Hip and Elbow Dysplasia -->
+      <div style="width: 48%; text-align: left;">
+        <h3>Hip and Elbow Dysplasia</h3>
+        <p>
+          This affects the development of the hip and elbow joints and causes pain and mobility issues.
+        </p>
+      </div>
+  
+      <!-- Right Side: Heart Disease -->
+      <div style="width: 48%; text-align: left;">
+        <h3>Heart Disease</h3>
+        <p>
+          This can result in fatigue, coughing, and breathing difficulties.
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+  
+<!---last section of the page-->
+<div style="display: flex; max-width: 1200px; margin: 0 auto;">
+
+  <!-- Section 1 -->
+  <div style="flex: 1; padding: 20px;">
+      <div style="margin-bottom: 20px;">
+          <h2 style="font-weight: bold;">ONLINE SHOPPING</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+              <li>Dogs</li>
+              <li>Cats</li>
+              <li>Small Pets</li>
+              <li>Consult a Vet</li>
+              <li>Dog Behaviour</li>
+              <li>Pet Pharmacy</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div style="flex: 1; padding: 20px;">
+      <div style="margin-bottom: 20px;">
+          <h2 style="font-weight: bold;">EXPLORE</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+              <li>Our story</li>
+              <li>FAQs</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div style="flex: 1; padding: 20px;">
+      <div style="margin-bottom: 20px;">
+          <h2 style="font-weight: bold;">QUICK LINKS</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+              <li>My Account</li>
+              <li>Track Your Order</li>
+              <li>Refund policy</li>
+              <li>Return policy</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Use</li>
+              <li>Refer and save</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div style="flex: 1; padding: 20px;">
+      <div style="margin-bottom: 20px;">
+          <h2 style="font-weight: bold;">EXPERIENCE SUPERTAILS APP ON MOBILE</h2>
+      </div>
+  </div>
+</div>
+
+<!-- Logo Card -->
+<div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px; background-color: #f0f0f0; border-radius: 8px;">
+
+  <!-- FOLLOW US -->
+  <div style="flex: 1;">
+    <h2>FOLLOW US</h2>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+        <li style="margin-right: 10px;"><a href="#"><img src="images/instalogo.avif" alt="Instagram" width="30"></a></li>
+        <li style="margin-right: 10px;"><a href="#"><img src="images/facebooklogo_for-breedpage.avif" alt="Facebook" width="30"></a></li>
+        <li style="margin-right: 10px;"><a href="#"><img src="images/youtubelogo.jpg" alt="YouTube" width="30"></a></li>
+        <li style="margin-right: 10px;"><a href="#"><img src="images/twitterlogo.png" alt="Twitter" width="30"></a></li>
+        <li style="margin-right: 10px;"><a href="#"><img src="images/linkedinlogo_for-breedpage.webp" alt="LinkedIn" width="30"></a></li>
+    </ul>
+</div>
+
+  <!-- GET IN TOUCH -->
+  <div style="flex: 1;">
+      <h2>GET IN TOUCH</h2>
+      <p>1800-5723-575</p>
+      <p>support@petconsultancy.com</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

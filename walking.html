@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------------------------------Adding the bootstrap-------------------------------------------------------------------------------------------->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+<!-------------------------------------------------- Body of the website start------------------------------------------------------------->
+<body> 
+<!------------------------------------------main heading--------------------------------------------------------------------------------------------->
+ 
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!----------------------------------------------------------------------Menu's.----------------------------------------------------------->
+ 
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+<!--..---------------------------------------------------------------Adding the dropdown menu in that------------------------------------------------->
+ 
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+<!------------------------------------------------------------End of the dropdown---------------------------------->
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+  <!-- Image with dog walking service name ................................... -->
+
+  <div style="position: relative; text-align: center; margin-top: -20px; padding: 20px; border-bottom: 5px; border-radius: 15px; overflow: hidden;">
+    <img src="images/dog_walking_imagefor_walking.jpeg" alt="Description of the image" style="width: 100%; height: auto; max-width: 1200px; max-height: 550px; border-radius: 15px;">
+    <div style="position: absolute; top: 20px; left: 70%; transform: translateX(-50%); padding: 20px; text-align: center; color: #159b9b;">
+        <h1 style="font-weight: bold; line-height: 1.3; font-size: 1.8em;">Dog Walking Service</h1>
+        <h2 style="font-weight: bold; line-height: 1.3; font-size: 1.8em;">in Bangalore</h2>
+    </div>
+</div>
+
+
+
+
+
+ 
+  <!.................................................next work add all the para................................>
+  
+  <div style="font-family: 'Arial', sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4; text-align: center;">
+    <div style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 1200px; margin: 0 auto;">
+        <h1 style="color: #159b9b;">Welcome to PetConsulting Dog Walking Service!</h1>
+        <p style="color: #555; line-height: 1.5;">
+            Are you facing a hectic day at work or planning a trip out of town? Balancing your responsibilities while ensuring your dog gets the exercise they need can be a challenge.
+        </p>
+        <p style="color: #555; line-height: 1.5;">
+            Luckily, if you're searching for a "<span style="font-weight: bold; color: #159b9b;">dog walker near me</span>" in Bengaluru, look no further than Kuddle's exceptional dog walking service. We understand that your furry companion holds a special place in your heart. That's why we're here to offer a reliable solution for their exercise, socialization, and potty needs.
+        </p>
+        <p style="color: #555; line-height: 1.5;">
+            Your dog's well-being is our top priority, and we leave no room for compromise. We know that regular physical activity is essential for your dog's overall health and fitness, and our expert dog walkers are ready to ensure they receive just that. Choose Kuddle's dog walking service in Bengaluru, and give your beloved pet the care and attention they deserve, right in your own neighborhood. With the Kuddle app, you can easily book a walk for your dog and even track their walk path on a map.
+        </p>
+    </div>
+</div>
+
+
+
+
+<!............................................. DOG WALKING  ......................>
+ 
+
+<div style="margin: 10px 5px; padding: 20px; text-align: center; font-family: 'New Money Serif', serif;">
+  <h1 style="font-size: 3em; color: #159b9b;">
+    Importance of <br>
+    <strong style="font-weight: bold;">DOG WALKING</strong>
+  </h1>
+</div>
+
+
+
+<br><br>
+
+<!.................................................next work add all the para................................>
+
+  
+<div style="font-family: 'Arial', sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4; text-align: center;">
+
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Reduce obesity_image_walking.png" alt="Puppy 1">
+      <p>Reduce obesity</p>
+  </div>
+
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Mood Uplifter_image_walking.avif" alt="Puppy 2">
+      <p>Mood Uplifter</p>
+  </div>
+
+
+
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Stronger Muscles and Bones_image_walking.avif" alt="Puppy 1">
+    <p>Stronger Muscles and Bones </p>
+</div>
+
+<div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Mental Stimulation_image_walking.jpeg" alt="Puppy 2">
+    <p> Mental Stimulation</p>
+</div>
+
+<div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Strengthen Your Bond with Dogs_image_walking.jpg" alt="Puppy 1">
+  <p>Strengthen Your Bond with Dogs</p>
+</div>
+
+<div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Preventive Health_image_walking.jpg" alt="Puppy 2">
+  <p> Preventive Health</p>
+</div>
+  <!-- Add more circles as needed -->
+
+</div>
+ 
+
+<!..................................... next is ......................................>
+<div style="position: absolute; top: 20px; right: 20px; text-align: right; color: #159b9b;">
+  <h2 style="font-weight: bold; line-height: 1.3; font-size: 2.5em; margin-bottom: 5px;">How It</h2>
+  <h2 style="font-weight: bold; line-height: 1.3; font-size: 2.5em;"><span style="color: #159b9b;">WORKS</span></h2>
+</div>
+
+
+
+<!........................ Applying cards...............>
+ 
+
+
+
+
+<br>
+
+<div style="display: flex; max-width: 1200px; margin: 20px auto;">
+
+  <!-- Left Card 1 -->
+  <div style="flex: 1; padding: 20px; margin: 10px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <!-- Image 1 -->
+      <img src="images/pet_walking_for_walking_page.jpg" alt="Image 1" style="width: 100%; height: 350px; object-fit: cover; border-radius: 15px;">
+  </div>
+
+  <!-- Right Card -->
+  <div style="flex: 1; padding: 20px; margin: 10px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h2 style="font-weight: bold; color: #159b9b; font-size: 1.8em; margin-bottom: 10px;">How It WORKS</h2>
+      <p>We at Kuddle, a premier provider of dog walking services in Bengaluru, offer a 5-star rated service that is tailored to meet the unique needs of your dog. Our trained and experienced dog walkers will come to your location at a time that is convenient for you and take your beloved pet for a fun and invigorating walk of 30 minutes. Whether you need just one walk a day or multiple walks, we have got you covered.</p>
+
+      <!-- List on the right side with dog paw bullet points -->
+      <ul style="list-style-type: none; padding-left: 0; margin-top: 10px;">
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Vetted walkers who are rated by the community</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Live tracking of walk</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Step and route data of each walk</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> All walkers carry poop scooper</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Paw cleaning done post every walk</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Complete absenteeism support</li>
+          <li><span style="color: #159b9b; font-size: 1.2em;">🐾</span> Walks on all 7 days of the week</li>
+      </ul>
+  </div>
+
+  <!-- Left Card 2 -->
+  <div style="flex: 1; padding: 20px; margin: 10px; border-radius: 15px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <!-- Image 2 -->
+      <img src="images/dog_and_cat.png" alt="Image 2" style="width: 100%; height: 350px; object-fit: cover; border-radius: 15px;">
+  </div>
+
+</div>
+
+
+<!......................practice ....................................>
+ 
+
+
+
+
+
+<!............................................>
+<div style="text-align: center; color: #159b9b;">
+  <h2 style="font-weight: bold; font-size: 2em;">3,00,000+ km walked</h2>
+  <p>Our <strong style="font-size: 1.5em; margin-right: 5px;">SUBSCRIPTIONS</strong></p>
+  <p style="font-size: 1.2em;">PetConsultant walkers will also walk dogs on Sundays</p>
+</div>
+<br><br><br>
+<!............................................>
+
+<div style="text-align: center;">
+  <h2 style="font-weight: bold; font-size: 2em; color: #159b9b;">Our<br>PROFESSIONALS</h2>
+</div>
+
+<br>
+<!....................................................>
+
+
+<div style="width: 90%; height: auto; background-color: #f2f2f2; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: flex; justify-content: center; margin: 20px auto;">
+
+  <!-- Doctor 1 -->
+  <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+
+    <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+
+    <h2 style="margin: 20px; text-align: center; color:#09a8a6; font-family: 'Georgia', serif;">Dr. Emily Hernandez</h2>
+
+    <div style="margin: 20px;">
+      <!-- Add your dr. info here -->
+      <p style="text-align: justify;">Dr. Emily Hernandez is a renowned figure in veterinary medicine, specializing in cardiology for animals. With over two decades of experience and a distinguished career, Dr. Hernandez has dedicated her expertise to diagnosing and treating heart conditions in animals. Her profound understanding of cardiovascular diseases in pets has led to innovative treatments and life-saving interventions. Her commitment to providing comprehensive care and advanced solutions has earned her recognition as a pioneer in veterinary cardiology, making her an invaluable resource for pet owners seeking specialized heart care for their beloved animals.</p>
+    </div>
+
+  </div>
+
+  <!-- Doctor 2 -->
+  <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+
+    <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+
+    <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Thomas Bennett</h2>
+
+    <div style="margin: 20px;">
+      <!-- Add your dr info here -->
+      <p style="text-align: justify;">Dr. Thomas Bennett stands as a leading veterinary neurologist known for his exceptional work in diagnosing and treating neurological disorders in animals. With a strong foundation in veterinary neurology and neurosurgery, Dr. Bennett addresses a wide range of neurological conditions in pets, including seizures, spinal disorders, and nerve injuries. His expertise lies in employing cutting-edge diagnostic techniques and developing tailored treatment plans to improve the quality of life for animals with neurological issues. Dr. Bennett's dedication to advancing the field of veterinary neurology has positioned him as a key figure in providing specialized care for pets facing complex neurological challenges.</p>
+    </div>
+
+  </div>
+
+  <!-- Doctor 3 -->
+  <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+
+    <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+
+
+    <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Sophia Lee</h2>
+
+    <div style="margin: 20px;">
+      <!-- Add your dr. into here -->
+      <p style="text-align: justify;">Dr. Sophia Lee is a distinguished veterinary dermatologist recognized for her expertise in addressing skin conditions and allergies in animals. With a deep understanding of dermatological issues in pets, Dr. Lee offers comprehensive consultations and treatments for various skin disorders, including allergies, infections, and chronic dermatitis. Her commitment to resolving skin-related problems in animals through precise diagnosis and individualized treatment strategies has earned her accolades in the veterinary community. Dr. Lee's specialized knowledge and compassionate approach make her a sought-after professional for pet owners seeking expert care for their furry companions' skin health.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<br><br><br>
+
+<!................................... l................>
+
+<div style="text-align: center; color: #159b9b;">
+  <h2 style="font-weight: bold; font-size: 2em;">Trusted by</h2>
+  <p>Pet Parents</p>
+  <p>Google in partnership with Ministry of Electronics and Information Technology (MeitY) has chosen us as one of India's top 100 startups</p>
+</div>
+
+
+<br><br><br>
+
+<div style="text-align: center; color: #159b9b;">
+
+  <h1 style="font-weight: bold; font-size: 2em;">PetConsulting</h1>
+
+  <p>Join an online community of 60,000+ pet parents in Bangalore</p>
+
+</div>
+
+
+
+<br><br>
+<!............................................... some of the images related to the services................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px;">
+    <!-- Services Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Services</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Pet Grooming</li>
+        <li style="margin-bottom: 10px;">Dog Walking</li>
+        <li style="margin-bottom: 10px;">Dog Behaviourist</li>
+        <li style="margin-bottom: 10px;">Vet Home Visit</li>
+        <li style="margin-bottom: 10px;">Vet Video Call</li>
+        <li style="margin-bottom: 10px;">Pet Nutritionist</li>
+        <li style="margin-bottom: 10px;">Cat Grooming</li>
+        <li style="margin-bottom: 10px;">Experience Center</li>
+        <li style="margin-bottom: 10px;">Dog Food Planner</li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Social</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Blogs</li>
+        <li style="margin-bottom: 10px;">Adoptions</li>
+        <li style="margin-bottom: 10px;">Ask Questions</li>
+        <li style="margin-bottom: 10px;">Stories</li>
+        <li style="margin-bottom: 10px;">Polls</li>
+      </ul>
+    </div>
+
+    <!-- Blogs Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Blogs</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Why Do Dogs Steal and Protect Things and How to Prevent It</li>
+        <li style="margin-bottom: 10px;">Decoding Your Doggie's Poop Color</li>
+        <li style="margin-bottom: 10px;">Absolutely Avoid These Nutrients in Your Pet Food!</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Contact Us</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">Phone: 08049670496</li>
+        <li style="margin-bottom: 10px;">Email: social@kuddle.pet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<!..................................Location of the website..........................................................>
+
+<div style="text-align: center; color: #159b9b; margin-top: 20px;">
+
+  <h1>Hundreds of dog walkers near you in Bengaluru, Karnataka</h1>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
+
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Adugudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Anjanapur</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">BTM Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banashankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bannerghatta</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banshankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Basavangudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bel Layout</div>
+    <!-- Add more locations as needed -->
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Adugudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Anjanapur</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">BTM Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banashankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bannerghatta</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banshankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Basavangudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bel Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Adugudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Anjanapur</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">BTM Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banashankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bannerghatta</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banshankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Basavangudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bel Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Adugudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Anjanapur</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">BTM Layout</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banashankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bannerghatta</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Banshankari</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Basavangudi</div>
+    <div style="flex: 0 0 24%; margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Bel Layout</div>
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+<!........................................................... last section of the  website.................................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: 20px auto; padding: 20px; display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">About Us</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Privacy Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Terms & Conditions</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Refund Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Return Policy</a>
+  </div>
+</div>
+
+<style>
+  a:hover {
+    background-color: #4c8beb;
+    color: #159b9b;
+  }
+</style>
+ <br>
+ <footer style="text-align: center; color: #159b9b; margin-top: 20px;">
+  <p>&copy; 2022 Kuddle, All Rights Reserved</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>

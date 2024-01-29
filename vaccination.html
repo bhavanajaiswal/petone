@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------------------------------Adding the bootstrap-------------------------------------------------------------------------------------------->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+<!-------------------------------------------------- Body of the website start------------------------------------------------------------->
+<body> 
+<!------------------------------------------main heading--------------------------------------------------------------------------------------------->
+ 
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!----------------------------------------------------------------------Menu's.----------------------------------------------------------->
+ 
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+<!--..---------------------------------------------------------------Adding the dropdown menu in that------------------------------------------------->
+ 
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+<!------------------------------------------------------------End of the dropdown---------------------------------->
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+
+<!........................................... image of the pets.....................................................>
+<div style="position: relative; text-align: center; padding: 20px; border-bottom: 5px;">
+    <!-- Increased the width of the image and added border-radius -->
+    <img src="images/Pet-Vaccination-Banner_for_vaccinationpage.png" alt="Description of the image" style="width: 1400px; height: 400px; border-radius: 20px;">
+</div>
+
+
+<!....................................dog vaccinations..........................>
+
+
+<div style="text-align: center; color: #159b9b;">
+    <h1>Dog Vaccination</h1>
+</div>
+
+<div id="dogVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Rabies Vaccine_vaccinationpage.jpg" alt="Rabies Vaccine" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Rabies Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Distemper Vaccine_imagefor_vaccination.webp" alt="Distemper Vaccine" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Distemper Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Parvovirus Vaccine_vaccination.png" alt="Parvovirus Vaccine" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Parvovirus Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreDogVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreDogVaccinations() {
+        // Add logic to fetch and append additional dog vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Dog Vaccine 1", image: "images/Additional Dog Vaccine 1.jpg", link: "additional-dog-vaccine1-page.html" },
+            { name: "Additional Dog Vaccine 2", image: "images/Additional Dog Vaccine 2.jpg", link: "additional-dog-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const dogVaccinationContainer = document.getElementById("dogVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            dogVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+<br><br>
+
+
+
+
+<!................................cat vaccination...................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Cat Vaccination</h1>
+</div>
+
+<div id="catVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Cat Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cat Vaccine 1.jpg" alt="Cat Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cat-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Feline Calicivirus (FCV) Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Cat Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cat Vaccine 2.jpg" alt="Cat Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cat-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Feline Leukemia (FeLV) Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Cat Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cat Vaccine 3.jpg" alt="Cat Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cat-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Feline Herpesvirus (FHV) Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreCatVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreCatVaccinations() {
+        // Add logic to fetch and append additional cat vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Vaccine 1", image: "images/Additional Vaccine 1.jpg", link: "additional-vaccine1-page.html" },
+            { name: "Additional Vaccine 2", image: "images/Additional Vaccine 2.jpg", link: "additional-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const catVaccinationContainer = document.getElementById("catVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            catVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+<!.............................................. birds vaccinations.................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Bird Vaccination</h1>
+</div>
+
+<div id="birdVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Bird Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Bird Vaccine 1.jpg" alt="Bird Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="bird-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Avian Influenza Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Bird Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Bird Vaccine 2.jpg" alt="Bird Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="bird-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Psittacosis Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Bird Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Bird Vaccine 3.jpg" alt="Bird Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="bird-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Polyomavirus Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreBirdVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreBirdVaccinations() {
+        // Add logic to fetch and append additional bird vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Bird Vaccine 1", image: "images/Additional Bird Vaccine 1.jpg", link: "additional-bird-vaccine1-page.html" },
+            { name: "Additional Bird Vaccine 2", image: "images/Additional Bird Vaccine 2.jpg", link: "additional-bird-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const birdVaccinationContainer = document.getElementById("birdVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            birdVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+<!...........................................rabbit vaccination.....................................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Rabbit Vaccination</h1>
+</div>
+
+<div id="rabbitVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Rabbit Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Rabbit Vaccine 1.jpg" alt="Rabbit Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="rabbit-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">RHDV1 Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Rabbit Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Rabbit Vaccine 2.jpg" alt="Rabbit Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="rabbit-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">RHDV2 Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Rabbit Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Rabbit Vaccine 3.jpg" alt="Rabbit Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="rabbit-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Myxomatosis Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreRabbitVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreRabbitVaccinations() {
+        // Add logic to fetch and append additional rabbit vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Rabbit Vaccine 1", image: "images/Additional Rabbit Vaccine 1.jpg", link: "additional-rabbit-vaccine1-page.html" },
+            { name: "Additional Rabbit Vaccine 2", image: "images/Additional Rabbit Vaccine 2.jpg", link: "additional-rabbit-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const rabbitVaccinationContainer = document.getElementById("rabbitVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            rabbitVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+<!.......................................... next is for turtule........................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Turtle Vaccination</h1>
+</div>
+
+<div id="turtleVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Turtle Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Turtle Vaccine 1.jpg" alt="Turtle Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="turtle-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Shell Health Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Turtle Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Turtle Vaccine 2.jpg" alt="Turtle Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="turtle-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Digestive System Booster</a>
+        </div>
+    </div>
+
+    <!-- Turtle Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Turtle Vaccine 3.jpg" alt="Turtle Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="turtle-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Vitamin Enrichment Shot</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreTurtleVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreTurtleVaccinations() {
+        // Add logic to fetch and append additional turtle vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Turtle Vaccine 1", image: "images/Additional Turtle Vaccine 1.jpg", link: "additional-turtle-vaccine1-page.html" },
+            { name: "Additional Turtle Vaccine 2", image: "images/Additional Turtle Vaccine 2.jpg", link: "additional-turtle-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const turtleVaccinationContainer = document.getElementById("turtleVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            turtleVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<!....................................... Hamsters.......................................>>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Hamster Vaccination</h1>
+</div>
+
+<div id="hamsterVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Hamster Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Hamster Vaccine 1.jpg" alt="Hamster Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="hamster-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Digestive Health Booster</a>
+        </div>
+    </div>
+
+    <!-- Hamster Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Hamster Vaccine 2.jpg" alt="Hamster Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="hamster-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Immunity Enhancement Shot</a>
+        </div>
+    </div>
+
+    <!-- Hamster Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Hamster Vaccine 3.jpg" alt="Hamster Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="hamster-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Heart Health Formula</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreHamsterVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreHamsterVaccinations() {
+        // Add logic to fetch and append additional hamster vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Hamster Vaccine 1", image: "images/Additional Hamster Vaccine 1.jpg", link: "additional-hamster-vaccine1-page.html" },
+            { name: "Additional Hamster Vaccine 2", image: "images/Additional Hamster Vaccine 2.jpg", link: "additional-hamster-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const hamsterVaccinationContainer = document.getElementById("hamsterVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            hamsterVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+
+<!...............................horses......................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Horse Vaccination</h1>
+</div>
+
+<div id="horseVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Horse Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Horse Vaccine 1.jpg" alt="Horse Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="horse-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Equine Influenza Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Horse Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Horse Vaccine 2.jpg" alt="Horse Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="horse-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Tetanus Toxoid Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Horse Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Horse Vaccine 3.jpg" alt="Horse Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="horse-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Rhinopneumonitis Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreHorseVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreHorseVaccinations() {
+        // Add logic to fetch and append additional horse vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Horse Vaccine 1", image: "images/Additional Horse Vaccine 1.jpg", link: "additional-horse-vaccine1-page.html" },
+            { name: "Additional Horse Vaccine 2", image: "images/Additional Horse Vaccine 2.jpg", link: "additional-horse-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const horseVaccinationContainer = document.getElementById("horseVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            horseVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<!.............................. cattle..............................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Cattle Vaccination</h1>
+</div>
+
+<div id="cattleVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Cattle Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cattle Vaccine 1.jpg" alt="Cattle Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cattle-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Bovine Viral Diarrhea (BVD) Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Cattle Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cattle Vaccine 2.jpg" alt="Cattle Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cattle-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Clostridial Diseases Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Cattle Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Cattle Vaccine 3.jpg" alt="Cattle Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="cattle-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Leptospirosis Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreCattleVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreCattleVaccinations() {
+        // Add logic to fetch and append additional cattle vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Cattle Vaccine 1", image: "images/Additional Cattle Vaccine 1.jpg", link: "additional-cattle-vaccine1-page.html" },
+            { name: "Additional Cattle Vaccine 2", image: "images/Additional Cattle Vaccine 2.jpg", link: "additional-cattle-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const cattleVaccinationContainer = document.getElementById("cattleVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            cattleVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+
+<!........................goat vaccination..............................................>
+
+
+
+<div style="text-align: center; color: #159b9b;">
+    <h1>Goat Vaccination</h1>
+</div>
+
+<div id="goatVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Goat Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Goat Vaccine 1.jpg" alt="Goat Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="goat-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Caprine Arthritis Encephalitis (CAE) Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Goat Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Goat Vaccine 2.jpg" alt="Goat Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="goat-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Caseous Lymphadenitis (CL) Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Goat Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Goat Vaccine 3.jpg" alt="Goat Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="goat-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Tetanus Toxoid Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreGoatVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreGoatVaccinations() {
+        // Add logic to fetch and append additional goat vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Goat Vaccine 1", image: "images/Additional Goat Vaccine 1.jpg", link: "additional-goat-vaccine1-page.html" },
+            { name: "Additional Goat Vaccine 2", image: "images/Additional Goat Vaccine 2.jpg", link: "additional-goat-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const goatVaccinationContainer = document.getElementById("goatVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            goatVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+<!.......................................goat.................................................>
+<div style="text-align: center; color: #159b9b;">
+    <h1>Sheep Vaccination</h1>
+</div>
+
+<div id="sheepVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Sheep Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Sheep Vaccine 1.jpg" alt="Sheep Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="sheep-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Clostridium Perfringens Type C&D Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Sheep Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Sheep Vaccine 2.jpg" alt="Sheep Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="sheep-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Foot Rot Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Sheep Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Sheep Vaccine 3.jpg" alt="Sheep Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="sheep-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Peste des Petits Ruminants (PPR) Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreSheepVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreSheepVaccinations() {
+        // Add logic to fetch and append additional sheep vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Sheep Vaccine 1", image: "images/Additional Sheep Vaccine 1.jpg", link: "additional-sheep-vaccine1-page.html" },
+            { name: "Additional Sheep Vaccine 2", image: "images/Additional Sheep Vaccine 2.jpg", link: "additional-sheep-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const sheepVaccinationContainer = document.getElementById("sheepVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            sheepVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+<!............................................snake.............................................>
+
+<div style="text-align: center; color: #159b9b;">
+    <h1>Reptile Vaccination</h1>
+</div>
+
+<div id="reptileVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Reptile Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Reptile Vaccine 1.jpg" alt="Reptile Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="reptile-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Venomous Snake Antivenom</a>
+        </div>
+    </div>
+
+    <!-- Reptile Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Reptile Vaccine 2.jpg" alt="Reptile Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="reptile-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Iguana Parainfluenza Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Reptile Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Reptile Vaccine 3.jpg" alt="Reptile Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="reptile-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Turtle Shell Strengthener</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMoreReptileVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMoreReptileVaccinations() {
+        // Add logic to fetch and append additional reptile vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Reptile Vaccine 1", image: "images/Additional Reptile Vaccine 1.jpg", link: "additional-reptile-vaccine1-page.html" },
+            { name: "Additional Reptile Vaccine 2", image: "images/Additional Reptile Vaccine 2.jpg", link: "additional-reptile-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const reptileVaccinationContainer = document.getElementById("reptileVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            reptileVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="text-align: center; color: #159b9b;">
+    <h1>Poultry Vaccination</h1>
+</div>
+
+<div id="poultryVaccinationContainer" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+    <!-- Poultry Vaccination Card 1 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Poultry Vaccine 1.jpg" alt="Poultry Vaccine 1" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="poultry-vaccine1-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Avian Influenza Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Poultry Vaccination Card 2 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Poultry Vaccine 2.jpg" alt="Poultry Vaccine 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="poultry-vaccine2-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Coccidiosis Vaccine</a>
+        </div>
+    </div>
+
+    <!-- Poultry Vaccination Card 3 -->
+    <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="images/Poultry Vaccine 3.jpg" alt="Poultry Vaccine 3" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 10px; text-align: center;">
+            <a href="poultry-vaccine3-page.html" style="text-decoration: none; color: #159b9b; font-weight: bold;">Newcastle Disease Vaccine</a>
+        </div>
+    </div>
+
+</div>
+
+<div style="text-align: center;">
+    <button onclick="loadMorePoultryVaccinations()">Load More</button>
+</div>
+
+<script>
+    function loadMorePoultryVaccinations() {
+        // Add logic to fetch and append additional poultry vaccinations dynamically
+        // Example: You can fetch data from a database or another source and append new vaccination cards
+        // For now, let's assume you have more static data to add
+
+        const additionalVaccinations = [
+            { name: "Additional Poultry Vaccine 1", image: "images/Additional Poultry Vaccine 1.jpg", link: "additional-poultry-vaccine1-page.html" },
+            { name: "Additional Poultry Vaccine 2", image: "images/Additional Poultry Vaccine 2.jpg", link: "additional-poultry-vaccine2-page.html" },
+            // Add more data as needed
+        ];
+
+        const poultryVaccinationContainer = document.getElementById("poultryVaccinationContainer");
+
+        additionalVaccinations.forEach(vaccine => {
+            const cardHtml = `
+                <div style="width: 30%; background-color: #fff; border-radius: 10px; overflow: hidden; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="${vaccine.image}" alt="${vaccine.name}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 10px; text-align: center;">
+                        <a href="${vaccine.link}" style="text-decoration: none; color: #159b9b; font-weight: bold;">${vaccine.name}</a>
+                    </div>
+                </div>
+            `;
+            poultryVaccinationContainer.innerHTML += cardHtml;
+        });
+    }
+</script>
+
+
+<br><br>
+
+
+ 
+<!............................................... some of the images related to the services................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px;">
+    <!-- Services Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Services</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Pet Grooming</li>
+        <li style="margin-bottom: 10px;">Dog Walking</li>
+        <li style="margin-bottom: 10px;">Dog Behaviourist</li>
+        <li style="margin-bottom: 10px;">Vet Home Visit</li>
+        <li style="margin-bottom: 10px;">Vet Video Call</li>
+        <li style="margin-bottom: 10px;">Pet Nutritionist</li>
+        <li style="margin-bottom: 10px;">Cat Grooming</li>
+        <li style="margin-bottom: 10px;">Experience Center</li>
+        <li style="margin-bottom: 10px;">Dog Food Planner</li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Social</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Blogs</li>
+        <li style="margin-bottom: 10px;">Adoptions</li>
+        <li style="margin-bottom: 10px;">Ask Questions</li>
+        <li style="margin-bottom: 10px;">Stories</li>
+        <li style="margin-bottom: 10px;">Polls</li>
+      </ul>
+    </div>
+
+    <!-- Blogs Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Blogs</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Why Do Dogs Steal and Protect Things and How to Prevent It</li>
+        <li style="margin-bottom: 10px;">Decoding Your Doggie's Poop Color</li>
+        <li style="margin-bottom: 10px;">Absolutely Avoid These Nutrients in Your Pet Food!</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Contact Us</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">Phone: 08049670496</li>
+        <li style="margin-bottom: 10px;">Email: social@kuddle.pet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!........................................................... last section of the  website.................................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: 20px auto; padding: 20px; display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">About Us</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Privacy Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Terms & Conditions</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Refund Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Return Policy</a>
+  </div>
+</div>
+
+<style>
+  a:hover {
+    background-color: #babfc8;
+    color: #12658f;
+  }
+</style>
+<br><br>
+<!-----------------------------------------------------------Last section of the webpage--------------------------------------------------------------------->
+
+<footer style="text-align: center; background-color: #f5f5f5; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+  <p>&copy; 2023 Pet Consulting. All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>

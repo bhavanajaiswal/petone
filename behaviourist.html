@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--------------------------------------------------------Adding the bootstrap-------------------------------------------------------------------------------------------->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+<!-------------------------------------------------- Body of the website start------------------------------------------------------------->
+<body> 
+<!------------------------------------------main heading--------------------------------------------------------------------------------------------->
+ 
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!----------------------------------------------------------------------Menu's.----------------------------------------------------------->
+ 
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+<!--..---------------------------------------------------------------Adding the dropdown menu in that------------------------------------------------->
+ 
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+<!------------------------------------------------------------End of the dropdown---------------------------------->
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+
+
+<!........................................... image of the pets.....................................................>
+
+
+<div style="text-align: center; padding: 20px; border-bottom: 5px; position: relative;">
+    <img src="images/cat-giving-high-fivefor_behaviourpage.jpg" alt="Description of the image" style="width: 1200px; max-height: 500px; border-radius: 20px;">
+    <div style="position: absolute; top: 20px; left: 55%; transform: translateX(-50%); background-color: rgba(255, 255, 255, 0.7); padding: 10px; border-radius: 10px;">
+      <p style="margin: 0; font-size: 29px; color: #159b9b; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Professional Pet Training Services in Bangalore</p>
+    </div>
+  </div>
+  
+ 
+  <div style="text-align: center; padding: 20px; background-color: #f0f0f0;">
+    <h1 style="color: #159b9b;">HappyTAILS</h1>
+    <p>3000+ dogs trained to build lasting connections with pet parent</p>
+  </div>
+   
+  <!......................adding the vedio with links..............................>
+
+  <!-- Corrected YouTube embed link -->
+<!-- Corrected YouTube embed link -->
+<div style="position: relative; margin-top: 20px; text-align: center;">
+    <div style="border: 2px solid #f7fafa; border-radius: 10px; overflow: hidden; display: inline-block;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dklFk71eZNQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+  
+<!........................................services.................................>
+
+
+
+
+<div style="margin: 10px 5px; padding: 20px; text-align: center; font-family: 'New Money Serif', serif;">
+    <h1 style="font-size: 3em; color: #159b9b;">
+      Importance of <br>
+      <strong style="font-weight: bold;">PROFESSIONAL TRAINING</strong>
+    </h1>
+  </div>
+  
+  
+  
+  <br><br>
+  
+  <!.................................................next work add all the para................................>
+  
+    
+  <div style="font-family: 'Arial', sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4; text-align: center;">
+  
+    <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Strengthen your relationship_imagefor_behaviourpage.webp" alt="Puppy 1">
+        <p> Better Communication with Pet</p>
+    </div>
+  
+    <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Keep them safe_imagefor_behaviourpage.jpg" alt="Puppy 2">
+        <p>Keep them safe</p>
+    </div>
+  
+  
+  
+    <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Strengthen Your Bond with Dogs_image_walking.jpg" alt="Puppy 1">
+      <p> Less Stress </p>
+  </div>
+  
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Resolve anxiety_imagefor_behaviourpage.webp" alt="Puppy 2">
+      <p>Resolve anxiety </p>
+  </div>
+  
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/Strengthen Your Bond with Dogs_image_walking.jpg" alt="Puppy 1">
+    <p>Strengthen Your Bond with Dogs</p>
+  </div>
+  
+  <div style="display: inline-block; width: 200px; height: 200px; background-color: #e0f7fa; border-radius: 50%; margin: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <img style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;" src="images/More sociable_image_for_behaviour.webp" alt="Puppy 2">
+    <p> More sociable</p>
+  </div>
+    <!-- Add more circles as needed -->
+  
+  </div>
+   
+ <br> <br> <br>   
+<!---------------------------TRAINING PROGRAMS--------------------->
+
+ <div style="padding: 20px; background-color: #f0f0f0; text-align: center;">
+    <h2 style="color: #159b9b;">Our <br> TRAINING PROGRAMS</h2>
+    <!-- Add content for your training programs here -->
+  </div>
+
+  
+
+
+  <div style="display: flex; justify-content: space-around; padding: 20px;">
+
+    <div style="width: 300px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/Obedience Training_for_behaviour_page.jpg" alt="Obedience Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Obedience Training</h3>
+        <p>This program helps strengthen the bond with your furry companion and unlock their full potential! Develop essential obedience skills through positive reinforcement and effective communication.</p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #e6f7ff; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/Leash Training_imagefor_behaviour.jpg" alt="Leash Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Leash Training</h3>
+        <p>Transform your pet's walking habits and enjoy peaceful strolls together! Learn leash training techniques to ensure a pleasant and safe experience for both you and your furry friend.</p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #fff3e6; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/Puppy Board Training_imagefor_behaviourpage.jpg" alt="Puppy Board Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Puppy Board Training</h3>
+        <p>Give your puppy the best start in life by shaping them into a well-behaved and confident companion. Our puppy board training program focuses on socialization, basic commands, and positive behavior development.</p>
+      </div>
+    </div>
+  
+    <div style="width: 300px; background-color: #d9ead3; border-radius: 10px; overflow: hidden; text-align: center;">
+      <img src="images/Customized Training_imagefor_behaviourpage.webp" alt="Customized Training" style="width: 100%;">
+      <div style="padding: 10px;">
+        <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Customized Training</h3>
+        <p>Address your dog's specific training needs head-on with our customized training plan! Our experienced trainers tailor a program to address individual challenges and goals, ensuring a personalized and effective training experience.</p>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <!--------------------------------Book assessment session---------------------------------->
+
+  <div style="font-family: 'Arial', sans-serif; text-align: center; margin: 0; padding: 20px;">
+
+    <p style="font-size: 18px; color: #333; margin: 0;">Book assessment session for ₹ 499/- only.</p>
+    <a href="your_new_page.html" style="text-decoration: none;">
+      <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;">
+        Book Now
+      </button>
+    </a>
+  
+  </div>
+  
+  
+  
+  
+  <div style="text-align: center; padding: 40px; background-color: #159b9b; color: #fff; border-radius: 10px;">
+
+    <h2 style="font-size: 40px; margin-bottom: 20px;">What We Do</h2>
+
+    <!-- Training Cards -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+
+        <!-- Pee & Poop Training Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🚽</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Pee & Poop Training</h3>
+        </div>
+
+        <!-- Command Training Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">✋</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Command Training</h3>
+        </div>
+
+        <!-- Leash Walking Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🐾</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Leash Walking</h3>
+        </div>
+
+        <!-- House Manners Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🏠</span>
+            <h3 style="font-size: 24px; color: #159b9b;">House Manners</h3>
+        </div>
+
+        <!-- Separation Anxiety Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">😢🐶</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Separation Anxiety</h3>
+        </div>
+
+        <!-- Socialization Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🤝🐾</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Socialization</h3>
+        </div>
+
+        <!-- Food Aggression Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🍲😡</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Food Aggression</h3>
+        </div>
+
+        <!-- Guard Training Card -->
+        <div style="width: 200px; margin: 10px; padding: 15px; background-color: #fff; border-radius: 8px;">
+            <span style="font-size: 36px;">🐾🛡️</span>
+            <h3 style="font-size: 24px; color: #159b9b;">Guard Training</h3>
+        </div>
+
+    </div>
+</div>
+<br><br>
+
+<!..........................starting of the our professional..........>
+ 
+
+
+<h2 style="text-align: center; font-size: 40px; margin-bottom: 20px; color: #159b9b;">Our Professionals</h2>
+
+
+<br>
+
+
+<div style="width: 90%; height: auto; background-color: #f2f2f2; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: flex; justify-content: center; margin: 20px auto;">
+
+    <!-- Doctor 1 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+      <h2 style="margin: 20px; text-align: center; color:#09a8a6; font-family: 'Georgia', serif;">Dr. Emily Hernandez</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr. info here -->
+        <p style="text-align: justify;">Dr. Emily Hernandez is a renowned figure in veterinary medicine, specializing in cardiology for animals. With over two decades of experience and a distinguished career, Dr. Hernandez has dedicated her expertise to diagnosing and treating heart conditions in animals. Her profound understanding of cardiovascular diseases in pets has led to innovative treatments and life-saving interventions. Her commitment to providing comprehensive care and advanced solutions has earned her recognition as a pioneer in veterinary cardiology, making her an invaluable resource for pet owners seeking specialized heart care for their beloved animals.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Doctor 2 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+      <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Thomas Bennett</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr info here -->
+        <p style="text-align: justify;">Dr. Thomas Bennett stands as a leading veterinary neurologist known for his exceptional work in diagnosing and treating neurological disorders in animals. With a strong foundation in veterinary neurology and neurosurgery, Dr. Bennett addresses a wide range of neurological conditions in pets, including seizures, spinal disorders, and nerve injuries. His expertise lies in employing cutting-edge diagnostic techniques and developing tailored treatment plans to improve the quality of life for animals with neurological issues. Dr. Bennett's dedication to advancing the field of veterinary neurology has positioned him as a key figure in providing specialized care for pets facing complex neurological challenges.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Doctor 3 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+  
+      <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Sophia Lee</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr. into here -->
+        <p style="text-align: justify;">Dr. Sophia Lee is a distinguished veterinary dermatologist recognized for her expertise in addressing skin conditions and allergies in animals. With a deep understanding of dermatological issues in pets, Dr. Lee offers comprehensive consultations and treatments for various skin disorders, including allergies, infections, and chronic dermatitis. Her commitment to resolving skin-related problems in animals through precise diagnosis and individualized treatment strategies has earned her accolades in the veterinary community. Dr. Lee's specialized knowledge and compassionate approach make her a sought-after professional for pet owners seeking expert care for their furry companions' skin health.</p>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
+  <div style="width: 90%; height: auto; background-color: #f2f2f2; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: flex; justify-content: center; margin: 20px auto;">
+
+    <!-- Doctor 1 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+      <h2 style="margin: 20px; text-align: center; color:#09a8a6; font-family: 'Georgia', serif;">Dr. Emily Hernandez</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr. info here -->
+        <p style="text-align: justify;">Dr. Emily Hernandez is a renowned figure in veterinary medicine, specializing in cardiology for animals. With over two decades of experience and a distinguished career, Dr. Hernandez has dedicated her expertise to diagnosing and treating heart conditions in animals. Her profound understanding of cardiovascular diseases in pets has led to innovative treatments and life-saving interventions. Her commitment to providing comprehensive care and advanced solutions has earned her recognition as a pioneer in veterinary cardiology, making her an invaluable resource for pet owners seeking specialized heart care for their beloved animals.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Doctor 2 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+      <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Thomas Bennett</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr info here -->
+        <p style="text-align: justify;">Dr. Thomas Bennett stands as a leading veterinary neurologist known for his exceptional work in diagnosing and treating neurological disorders in animals. With a strong foundation in veterinary neurology and neurosurgery, Dr. Bennett addresses a wide range of neurological conditions in pets, including seizures, spinal disorders, and nerve injuries. His expertise lies in employing cutting-edge diagnostic techniques and developing tailored treatment plans to improve the quality of life for animals with neurological issues. Dr. Bennett's dedication to advancing the field of veterinary neurology has positioned him as a key figure in providing specialized care for pets facing complex neurological challenges.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Doctor 3 -->
+    <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+  
+      <img src="images/walking_professionalfor_walking.webp" alt="Dr. Emily Hernandez" style="width: 100%; height: auto; border-radius: 10px 10px 0 0;">
+  
+  
+      <h2 style="margin: 20px; text-align: center; color: #09a8a6; font-family: 'Georgia', serif;">Dr. Sophia Lee</h2>
+  
+      <div style="margin: 20px;">
+        <!-- Add your dr. into here -->
+        <p style="text-align: justify;">Dr. Sophia Lee is a distinguished veterinary dermatologist recognized for her expertise in addressing skin conditions and allergies in animals. With a deep understanding of dermatological issues in pets, Dr. Lee offers comprehensive consultations and treatments for various skin disorders, including allergies, infections, and chronic dermatitis. Her commitment to resolving skin-related problems in animals through precise diagnosis and individualized treatment strategies has earned her accolades in the veterinary community. Dr. Lee's specialized knowledge and compassionate approach make her a sought-after professional for pet owners seeking expert care for their furry companions' skin health.</p>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
+  <br><br> 
+<!...............................More about TRAINING............................................................>
+
+<div style="text-align: center; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+
+    <!-- Card Container -->
+    <div style="width: 70%; margin: 0 auto; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
+
+        <!-- Heading -->
+        <h2 style="font-size: 40px; margin: 20px 0; font-family: Arial, sans-serif; color: #159b9b;">More about TRAINING</h2>
+
+        <!-- Paragraph 1 -->
+        <p style="font-size: 18px; margin: 0 20px 20px;">Kuddle's dog training service in Bengaluru specializes in tackling challenges faced by pet parents, such as addressing concerns like how to stop puppy biting, and guiding them effectively through successful toilet training for developing good toilet habits. Our experienced and certified dog trainers undergo a comprehensive onboarding procedure as part of our canine dog training program. They skillfully address intricate issues by curbing dog biting tendencies, implementing effective dog potty training techniques, mitigating dog separation anxiety, tackling dog aggression issues, and promoting pet socialization.</p>
+
+        <!-- Paragraph 2 -->
+        <p style="font-size: 18px; margin: 0 20px;">Our tailored programs encompass a wide range of canine education, covering aspects from puppy training to dog potty training, ensuring that you can train your dog effectively. We cater to various breeds and ages, such as Shih Tzu, German Shepherds, Golden Retrievers, Rottweilers, Labradors, and Dobermans. Our approach involves equipping pet parents to actively engage in the training journey, fostering a strong bond between dogs and their Hoomans.</p>
+
+    </div>
+
+</div>
+
+
+<!..........................................PetConsultant STORIES......................................>
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+    <!-- Left 50% with Text -->
+    <div style="flex: 1; max-width: 48%;">
+        <!-- Card Container -->
+        <div style="width: 70%; margin: 0 auto; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
+
+            <!-- Heading with specified text color -->
+            <h2 style="font-size: 40px; margin: 20px 0; color: #159b9b;">PetConsultant STORIES</h2>
+
+            <!-- Paragraph -->
+            <p style="font-size: 18px; margin: 0 20px 20px;">Become a part of PetConsulting YouTube community to stay up-to-date with what's new at Kuddle. Join us to learn about pet-parenting tips, our new launches and events happening in Bangalore for pet parents. Subscribe us on YouTube NOW to join Kuddle's Paw Family!</p>
+
+        </div>
+    </div>
+
+    <!-- Right 50% with YouTube Frame -->
+    <div style="flex: 1; max-width: 48%;">
+        <div style="border: 2px solid #f7fafa; border-radius: 10px; overflow: hidden;">
+            <!-- Decreased size of iframe and added text color -->
+            <iframe width="95%" height="280" src="https://www.youtube.com/embed/dY8ajyiZgIY" frameborder="0" allowfullscreen style="border: none;"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!..................................................................> 
+<div style="text-align: center; padding: 40px; background-color: #f0f0f0; border-radius: 10px;">
+
+    <h2 style="font-size: 40px; margin-bottom: 20px; color: #159b9b;">HappyPARENTS</h2>
+
+    <p style="font-size: 18px;"><h2>60,000+</h2></p>
+    
+    <p style="font-size: 18px; margin-top: -10px;"><h2>Read what pawrents feel about us</h2> </p>
+
+</div>
+
+
+
+
+
+
+
+ 
+<!............................................... some of the images related to the services................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px;">
+    <!-- Services Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Services</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Pet Grooming</li>
+        <li style="margin-bottom: 10px;">Dog Walking</li>
+        <li style="margin-bottom: 10px;">Dog Behaviourist</li>
+        <li style="margin-bottom: 10px;">Vet Home Visit</li>
+        <li style="margin-bottom: 10px;">Vet Video Call</li>
+        <li style="margin-bottom: 10px;">Pet Nutritionist</li>
+        <li style="margin-bottom: 10px;">Cat Grooming</li>
+        <li style="margin-bottom: 10px;">Experience Center</li>
+        <li style="margin-bottom: 10px;">Dog Food Planner</li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Social</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Blogs</li>
+        <li style="margin-bottom: 10px;">Adoptions</li>
+        <li style="margin-bottom: 10px;">Ask Questions</li>
+        <li style="margin-bottom: 10px;">Stories</li>
+        <li style="margin-bottom: 10px;">Polls</li>
+      </ul>
+    </div>
+
+    <!-- Blogs Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Blogs</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Why Do Dogs Steal and Protect Things and How to Prevent It</li>
+        <li style="margin-bottom: 10px;">Decoding Your Doggie's Poop Color</li>
+        <li style="margin-bottom: 10px;">Absolutely Avoid These Nutrients in Your Pet Food!</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #159b9b; font-size: 24px; margin-bottom: 15px;">Contact Us</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">Phone: 08049670496</li>
+        <li style="margin-bottom: 10px;">Email: social@kuddle.pet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!........................................................... last section of the  website.................................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: 20px auto; padding: 20px; display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">About Us</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Privacy Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Terms & Conditions</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Refund Policy</a>
+    <a href="#" style="text-decoration: none; color: #159b9b; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Return Policy</a>
+  </div>
+</div>
+
+<style>
+  a:hover {
+    background-color: #afbccf;
+    color: #d0dde3;
+  }
+</style>
+
+<br><br>
+<!-----------------------------------------------------------Last section of the webpage--------------------------------------------------------------------->
+
+<footer style="text-align: center; background-color: #f5f5f5; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+  <p>&copy; 2023 Pet Consulting. All rights reserved.</p>
+</footer>
+
+  
+
+</body>
+</html>
